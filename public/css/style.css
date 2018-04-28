@@ -1,0 +1,55 @@
+/* navbar */
+
+.bg-light{
+  background-color: #e74430!important;
+}
+.navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: #f1f1f1
+}
+
+/* end navbar */
+
+
+/**
+   Content
+        **/
+
+  #content{
+    margin-bottom:2rem;
+    margin-top: 2rem;
+    background-color: #fff;
+    padding:2rem;
+    border-radius: 3px;
+  }
+
+  .btn-group{
+    margin-bottom: 1rem;
+  }
+
+/* home */
+  #bg-home{
+    background-image: url("/img/gambar.jpg");
+    background-size: cover;
+    height:600px;
+  }
+
+  .jumbotron{
+    margin-bottom: 1rem;
+  }
+  .jumbotron .container{
+    padding-top:5%;
+  }
+  .jumbotron .container h1{
+    text-shadow: 4px 4px 8px #fff;
+  }
+  .jumbotron .container h4{
+    text-shadow: 2px 2px 4px #fff;
+  }
+/* end home */
+
+/**
+  end content
+          **/
