@@ -77,7 +77,7 @@ class WisataController extends Controller
     {
       $data['menu']   = 3;
       $data['wisata'] = \App\Wisata::find($id);
-      return view('pages.wisata.wisata_tambah')->with($data);
+      return view('pages.wisata.wisata_edit')->with($data);
     }
 
     /**
@@ -116,6 +116,13 @@ class WisataController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $wisata = \App\Wisata::find($id);
+        $wisata->delete();
+        return redirect('/wisata');
+    }
+
+    public function cetak(){
+      $pdf = PDF::loadView('pages.wisata.laporan');
+      return $pdf->download('laporan_wisata.pdf');
     }
 }

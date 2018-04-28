@@ -36,9 +36,9 @@
                 </td>
                 <td>{{ $w->alamat }}</td>
                 <td class="text-center">
-                  <form action="{{ url('/wisata/') }}" method="post">
+                  <form action="{{ url('/wisata/'.$w->id) }}" method="post">
                     @csrf
-                    @method('PUT')
+                    @method('DELETE')
                     <button type="button" onclick="location.href='{{ url('/wisata/'.$w->id.'/edit') }}'" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></button>
                     <button type="submit" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
                   </form>
